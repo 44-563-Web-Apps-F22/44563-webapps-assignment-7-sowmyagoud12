@@ -177,7 +177,20 @@
 
    }
 
-  
+  // Bonus
+function resetGame()
+{
+  treasureLocation = Math.floor(Math.random() * 24)
+  while(treasureLocation == 12)
+  {
+    treasureLocation = Math.floor(Math.random() * 24)
+  }
+  chestCount = 0
+  score = 0
+  document.getElementById("chests").innerHTML = "Number of chests checked is zero"
+  document.getElementById("score").innerHTML = "Score is unknown"
+  document.getElementById("help").innerHTML = "help report"
+}
 
 </script>
 </html>

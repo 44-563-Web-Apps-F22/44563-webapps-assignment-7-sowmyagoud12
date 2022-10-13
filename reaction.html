@@ -41,14 +41,13 @@ function recordReact()
 }
 function startTime()
 {
-  let countDown = Math.floor(Math.random() * 9) + 2
+  
   console.log()
-  for(let i = 0;i < countDown; i++)
+  for(let i = 0;i < 4; i++)
   {
-
     setTimeout(()=>{
       document.getElementById("countdown").innerHTML = i
-    },((countDown-1-i)*1000));
+    },((3-i)*1000));
   }
   setTimeout(()=>{
     if(myTime == undefined)
@@ -63,17 +62,7 @@ function startTime()
     },3000);
 }
 
-  function buttonPress1() {
-    setTimeout(function(){
-      document.getElementById('target').style.color = "red"
-    }, 3000)
-  }
-
-  function buttonPress2() {
-    setTimeout(()=>{
-      document.getElementById('target').style.color = "red"
-    }, 3000)
-  }
+  
   </script>
 
 </body>
