@@ -41,13 +41,13 @@ function recordReact()
 }
 function startTime()
 {
-  
+  let countDown = Math.floor(Math.random() * 9) + 2
   console.log()
-  for(let i = 0;i < 4; i++)
+  for(let i = 0;i < countDown; i++)
   {
     setTimeout(()=>{
       document.getElementById("countdown").innerHTML = i
-    },((3-i)*1000));
+    },((countDown-1-i)*1000));
   }
   setTimeout(()=>{
     if(myTime == undefined)
@@ -61,7 +61,6 @@ function startTime()
       
     },3000);
 }
-
   
   </script>
 
